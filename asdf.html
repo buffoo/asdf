@@ -550,7 +550,7 @@ var we_tabs_next_button = '[bloc=next-question]';
       });
     $("[name=client_name]").on("input", function () {
     client_name = getValueFromInput("client_name");
-      if (client_name != null && email != null) {
+      if (client_name == null && email == null) {
 
         nextTab = 'summary';
         we_activeTab = $(".w--tab-active").attr("data-w-tab");
@@ -575,7 +575,7 @@ var we_tabs_next_button = '[bloc=next-question]';
     $("[name=client_name]").parent("label.w-radio").on("click", function () {
       clickedRadioButtonValue = $("input", this).val();
       client_name = getValueFromInput("client_name");
-        if (client_name != null && email != null) {
+        if (client_name == null && email == null) {
 
         nextTab = 'summary';
         we_activeTab = $(".w--tab-active").attr("data-w-tab");
@@ -598,7 +598,7 @@ var we_tabs_next_button = '[bloc=next-question]';
 });
     $("[name=email]").on("input", function () {
     email = getValueFromInput("email");
-      if (client_name != null && email != null) {
+      if (client_name == null && email == null) {
 
         nextTab = 'summary';
         we_activeTab = $(".w--tab-active").attr("data-w-tab");
@@ -623,7 +623,7 @@ var we_tabs_next_button = '[bloc=next-question]';
     $("[name=email]").parent("label.w-radio").on("click", function () {
       clickedRadioButtonValue = $("input", this).val();
       email = getValueFromInput("email");
-        if (client_name != null && email != null) {
+        if (client_name == null && email == null) {
 
         nextTab = 'summary';
         we_activeTab = $(".w--tab-active").attr("data-w-tab");

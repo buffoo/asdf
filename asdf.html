@@ -4,7 +4,7 @@
 var gender, age, income, occupation, gloveuse, activities, hours, material, wrist, nolike, smartfeatures, client_name, summary;
 
 function checkemail() {
-  if (email != null && bropls != null) {
+  if (bropls != null && email != null) {
 
         nextTab = 'summary';
         we_activeTab = $(".w--tab-active").attr("data-w-tab");
@@ -25,6 +25,7 @@ function checkemail() {
 
         }
 }
+
     
 var we_tabs_next_button = '[bloc=next-question]';
     var we_tabs_prev_button = '[bloc=prev-question]';
@@ -571,6 +572,16 @@ var we_tabs_next_button = '[bloc=next-question]';
       $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
 
       });
+    $("[name=client_name]").on("input", function () {
+    client_name = getValueFromInput("client_name");
+      checkemail();
+});
+
+    $("[name=client_name]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      client_name = getValueFromInput("client_name");
+        checkemail();
+});
     $("[name=email]").on("input", function () {
     email = getValueFromInput("email");
       checkemail();
@@ -579,16 +590,6 @@ var we_tabs_next_button = '[bloc=next-question]';
     $("[name=email]").parent("label.w-radio").on("click", function () {
       clickedRadioButtonValue = $("input", this).val();
       email = getValueFromInput("email");
-        checkemail();
-});
-    $("[name=bropls]").on("input", function () {
-    bropls = getValueFromInput("bropls");
-      checkemail();
-});
-
-    $("[name=bropls]").parent("label.w-radio").on("click", function () {
-      clickedRadioButtonValue = $("input", this).val();
-      bropls = getValueFromInput("bropls");
         checkemail();
 });
     $('[bloc=next-question]').on('click',function() {

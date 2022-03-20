@@ -132,7 +132,8 @@ var we_tabs_next_button = '[bloc=next-question]';
       $($('[data-w-tab=age]')).attr('prev-tab',we_activeTab);
 
       });
-    $("[name=age]").on("input", function () {
+    
+  $("[name=age]").on("input", function () {
     age = getValueFromInput("age");
 
       nextTab = 'location2';
@@ -176,8 +177,8 @@ var we_tabs_next_button = '[bloc=next-question]';
       $($('[data-w-tab=location2]')).attr('prev-tab',we_activeTab);
 
       });
-    $("[name=autoInput]").on("input", function () {
-    autoInput = getValueFromInput("autoInput");
+    $("[name=location2]").on("input", function () {
+    location2 = getValueFromInput("location2");
 
       nextTab = 'income';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
@@ -198,9 +199,9 @@ var we_tabs_next_button = '[bloc=next-question]';
 
       });
 
-    $("[name=autoInput]").parent("label.w-radio").on("click", function () {
+    $("[name=location2]").parent("label.w-radio").on("click", function () {
       clickedRadioButtonValue = $("input", this).val();
-      autoInput = getValueFromInput("autoInput");
+      location2 = getValueFromInput("location2");
 
       nextTab = 'income';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");

@@ -571,16 +571,6 @@ var we_tabs_next_button = '[bloc=next-question]';
       $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
 
       });
-    $("[name=client_name]").on("input", function () {
-    client_name = getValueFromInput("client_name");
-      checkemail();
-});
-
-    $("[name=client_name]").parent("label.w-radio").on("click", function () {
-      clickedRadioButtonValue = $("input", this).val();
-      client_name = getValueFromInput("client_name");
-        checkemail();
-});
     $("[name=email]").on("input", function () {
     email = getValueFromInput("email");
       checkemail();
@@ -589,6 +579,16 @@ var we_tabs_next_button = '[bloc=next-question]';
     $("[name=email]").parent("label.w-radio").on("click", function () {
       clickedRadioButtonValue = $("input", this).val();
       email = getValueFromInput("email");
+        checkemail();
+});
+    $("[name=client_name]").on("input", function () {
+    client_name = getValueFromInput("client_name");
+      checkemail();
+});
+
+    $("[name=client_name]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      client_name = getValueFromInput("client_name");
         checkemail();
 });
     $('[bloc=next-question]').on('click',function() {

@@ -176,8 +176,8 @@ var we_tabs_next_button = '[bloc=next-question]';
       $($('[data-w-tab=location2]')).attr('prev-tab',we_activeTab);
 
       });
-    $("[name=Name]").on("input", function () {
-    Name = getValueFromInput("Name");
+    $("[name=autoInput]").on("input", function () {
+    autoInput = getValueFromInput("autoInput");
 
       nextTab = 'income';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
@@ -198,9 +198,9 @@ var we_tabs_next_button = '[bloc=next-question]';
 
       });
 
-    $("[name=Name]").parent("label.w-radio").on("click", function () {
+    $("[name=autoInput]").parent("label.w-radio").on("click", function () {
       clickedRadioButtonValue = $("input", this).val();
-      Name = getValueFromInput("Name");
+      autoInput = getValueFromInput("autoInput");
 
       nextTab = 'income';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");

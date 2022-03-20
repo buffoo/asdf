@@ -1,7 +1,7 @@
 <!-- Code generated in WeBlocks weblocks.com -->
 <script src="https://weblocks.io/library.js"></script>
 <script> 
-var gender, age, income, occupation, gloveuse, activities, hours, material, wrist, nolike, smarfeatures, client_name;
+var gender, age, income, occupation, gloveuse, activities, hours, material, wrist, nolike, smartfeatures, client_name;
 
 
 var we_tabs_next_button = '[bloc=next-question]';
@@ -464,7 +464,7 @@ var we_tabs_next_button = '[bloc=next-question]';
     $("[name=nolike]").on("input", function () {
     nolike = getValueFromInput("nolike");
 
-      nextTab = 'smarfeatures';
+      nextTab = 'smartfeatures';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
       we_indexOfActiveTab = tabList.indexOf(we_activeTab);
       we_indexOfNextTab = we_indexOfActiveTab + 1;
@@ -479,7 +479,7 @@ var we_tabs_next_button = '[bloc=next-question]';
       }
       $(we_tabs_next_button).addClass(we_tabs_active_class);
       $(".w--tab-active").attr('next-tab',nextTab);
-      $($('[data-w-tab=smarfeatures]')).attr('prev-tab',we_activeTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
 
       });
 
@@ -487,7 +487,7 @@ var we_tabs_next_button = '[bloc=next-question]';
       clickedRadioButtonValue = $("input", this).val();
       nolike = getValueFromInput("nolike");
 
-      nextTab = 'smarfeatures';
+      nextTab = 'smartfeatures';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
       we_indexOfActiveTab = tabList.indexOf(we_activeTab);
       we_indexOfNextTab = we_indexOfActiveTab + 1;
@@ -502,11 +502,11 @@ var we_tabs_next_button = '[bloc=next-question]';
       }
       $(we_tabs_next_button).addClass(we_tabs_active_class);
       $(".w--tab-active").attr('next-tab',nextTab);
-      $($('[data-w-tab=smarfeatures]')).attr('prev-tab',we_activeTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
 
       });
-    $("[name=smarfeatures]").on("input", function () {
-    smarfeatures = getValueFromInput("smarfeatures");
+    $("[name=smartfeatures]").on("input", function () {
+    smartfeatures = getValueFromInput("smartfeatures");
 
       nextTab = 'client_name';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
@@ -527,9 +527,9 @@ var we_tabs_next_button = '[bloc=next-question]';
 
       });
 
-    $("[name=smarfeatures]").parent("label.w-radio").on("click", function () {
+    $("[name=smartfeatures]").parent("label.w-radio").on("click", function () {
       clickedRadioButtonValue = $("input", this).val();
-      smarfeatures = getValueFromInput("smarfeatures");
+      smartfeatures = getValueFromInput("smartfeatures");
 
       nextTab = 'client_name';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");

@@ -269,7 +269,7 @@ var we_tabs_next_button = '[bloc=next-question]';
       });
     $("[name=occupation]").on("input", function () {
     occupation = getValueFromInput("occupation");
-      if ($("[name=variable]").val() == ($("[name=accounting_finance]").val() || $("[name=arts_entertainment]").val() || $("[name=engineering_it]").val() || $("[name=healthcare]").val() || $("[name=management_consulting]").val() || $("[name=manufacturing_construction]").val() || $("[name=other_occupation]").val() || $("[name=publicservice_education]").val() || $("[name=realestate]").val() || $("[name=retail_hospitality]").val() || $("[name=student]").val() || $("[name=transportation]").val())) {
+      if ($("input", this).val() == ($("[name=accounting_finance]").val() || $("[name=arts_entertainment]").val() || $("[name=engineering_it]").val() || $("[name=healthcare]").val() || $("[name=management_consulting]").val() || $("[name=manufacturing_construction]").val() || $("[name=other_occupation]").val() || $("[name=publicservice_education]").val() || $("[name=realestate]").val() || $("[name=retail_hospitality]").val() || $("[name=student]").val() || $("[name=transportation]").val())) {
 
         nextTab = 'activities';
         we_activeTab = $(".w--tab-active").attr("data-w-tab");
@@ -294,7 +294,7 @@ var we_tabs_next_button = '[bloc=next-question]';
     $("[name=occupation]").parent("label.w-radio").on("click", function () {
       clickedRadioButtonValue = $("input", this).val();
       occupation = getValueFromInput("occupation");
-        if ($("[name=variable]").val() == ($("[name=accounting_finance]").val() || $("[name=arts_entertainment]").val() || $("[name=engineering_it]").val() || $("[name=healthcare]").val() || $("[name=management_consulting]").val() || $("[name=manufacturing_construction]").val() || $("[name=other_occupation]").val() || $("[name=publicservice_education]").val() || $("[name=realestate]").val() || $("[name=retail_hospitality]").val() || $("[name=student]").val() || $("[name=transportation]").val())) {
+        if ($("input", this).val() == ($("[name=accounting_finance]").val() || $("[name=arts_entertainment]").val() || $("[name=engineering_it]").val() || $("[name=healthcare]").val() || $("[name=management_consulting]").val() || $("[name=manufacturing_construction]").val() || $("[name=other_occupation]").val() || $("[name=publicservice_education]").val() || $("[name=realestate]").val() || $("[name=retail_hospitality]").val() || $("[name=student]").val() || $("[name=transportation]").val())) {
 
         nextTab = 'activities';
         we_activeTab = $(".w--tab-active").attr("data-w-tab");

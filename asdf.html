@@ -1,8 +1,11 @@
 <!-- Code generated in WeBlocks weblocks.com -->
 <script src="https://weblocks.io/library.js"></script>
 <script> 
-var gender, age, income, occupation, gloveuse, activities, hours, material, wrist, nolike, smartfeatures, client_name, summary, accounting_finance, arts_entertainment, engineering_it, healthcare, management_consulting, manufacturing_construction, other_occupation, publicservice_education, realestate, retail_hospitality, student, transportation, hiking_camping, rollerblading_skateboarding, biking_motorcycling, skating_skiing, running_walking, other_activities;
+var gender, age, income, occupation, gloveuse, activities, hours, material, wrist, nolike, smartfeatures, client_name, summary, accounting_finance, arts_entertainment, engineering_it, healthcare, management_consulting, manufacturing_construction, other_occupation, publicservice_education, realestate, retail_hospitality, student, transportation, hiking_camping, rollerblading_skateboarding, biking_motorcycling, skating_skiing, running_walking, other_activities, sweaty_hands, awkward_fitting, not_waterproof, notwarm_enough, other_nolike, low_dexterity, poor_aesthetics, not_antibacterial, faulty_touchscreen, self_regulatedheat, temperature_setting, lighting, other_smartfeatures, health_monitoring, anti_theft;
 
+
+  
+  
 function checkemail() {
   if (bropls != null && email != null) {
 
@@ -1235,8 +1238,8 @@ var we_tabs_next_button = '[bloc=next-question]';
       $($('[data-w-tab=nolike]')).attr('prev-tab',we_activeTab);
 
       });
-    $("[name=nolike]").on("input", function () {
-    nolike = getValueFromInput("nolike");
+    $("[name=sweaty_hands]").on("input", function () {
+    sweaty_hands = getValueFromInput("sweaty_hands");
 
       nextTab = 'smartfeatures';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
@@ -1257,9 +1260,9 @@ var we_tabs_next_button = '[bloc=next-question]';
 
       });
 
-    $("[name=nolike]").parent("label.w-radio").on("click", function () {
+    $("[name=sweaty_hands]").parent("label.w-radio").on("click", function () {
       clickedRadioButtonValue = $("input", this).val();
-      nolike = getValueFromInput("nolike");
+      sweaty_hands = getValueFromInput("sweaty_hands");
 
       nextTab = 'smartfeatures';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
@@ -1279,10 +1282,10 @@ var we_tabs_next_button = '[bloc=next-question]';
       $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
 
       });
-    $("[name=smartfeatures]").on("input", function () {
-    smartfeatures = getValueFromInput("smartfeatures");
+    $("[name=awkward_fitting]").on("input", function () {
+    awkward_fitting = getValueFromInput("awkward_fitting");
 
-      nextTab = 'client_name';
+      nextTab = 'smartfeatures';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
       we_indexOfActiveTab = tabList.indexOf(we_activeTab);
       we_indexOfNextTab = we_indexOfActiveTab + 1;
@@ -1297,13 +1300,342 @@ var we_tabs_next_button = '[bloc=next-question]';
       }
       $(we_tabs_next_button).addClass(we_tabs_active_class);
       $(".w--tab-active").attr('next-tab',nextTab);
-      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
 
       });
 
-    $("[name=smartfeatures]").parent("label.w-radio").on("click", function () {
+    $("[name=awkward_fitting]").parent("label.w-radio").on("click", function () {
       clickedRadioButtonValue = $("input", this).val();
-      smartfeatures = getValueFromInput("smartfeatures");
+      awkward_fitting = getValueFromInput("awkward_fitting");
+
+      nextTab = 'smartfeatures';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
+
+      });
+    $("[name=not_waterproof]").on("input", function () {
+    not_waterproof = getValueFromInput("not_waterproof");
+
+      nextTab = 'smartfeatures';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
+
+      });
+
+    $("[name=not_waterproof]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      not_waterproof = getValueFromInput("not_waterproof");
+
+      nextTab = 'smartfeatures';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
+
+      });
+    $("[name=notwarm_enough]").on("input", function () {
+    notwarm_enough = getValueFromInput("notwarm_enough");
+
+      nextTab = 'smartfeatures';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
+
+      });
+
+    $("[name=notwarm_enough]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      notwarm_enough = getValueFromInput("notwarm_enough");
+
+      nextTab = 'smartfeatures';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
+
+      });
+    $("[name=other_nolike]").on("input", function () {
+    other_nolike = getValueFromInput("other_nolike");
+
+      nextTab = 'smartfeatures';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
+
+      });
+
+    $("[name=other_nolike]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      other_nolike = getValueFromInput("other_nolike");
+
+      nextTab = 'smartfeatures';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
+
+      });
+    $("[name=low_dexterity]").on("input", function () {
+    low_dexterity = getValueFromInput("low_dexterity");
+
+      nextTab = 'smartfeatures';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
+
+      });
+
+    $("[name=low_dexterity]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      low_dexterity = getValueFromInput("low_dexterity");
+
+      nextTab = 'smartfeatures';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
+
+      });
+    $("[name=poor_aesthetics]").on("input", function () {
+    poor_aesthetics = getValueFromInput("poor_aesthetics");
+
+      nextTab = 'smartfeatures';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
+
+      });
+
+    $("[name=poor_aesthetics]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      poor_aesthetics = getValueFromInput("poor_aesthetics");
+
+      nextTab = 'smartfeatures';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
+
+      });
+    $("[name=not_antibacterial]").on("input", function () {
+    not_antibacterial = getValueFromInput("not_antibacterial");
+
+      nextTab = 'smartfeatures';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
+
+      });
+
+    $("[name=not_antibacterial]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      not_antibacterial = getValueFromInput("not_antibacterial");
+
+      nextTab = 'smartfeatures';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
+
+      });
+    $("[name=faulty_touchscreen]").on("input", function () {
+    faulty_touchscreen = getValueFromInput("faulty_touchscreen");
+
+      nextTab = 'smartfeatures';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
+
+      });
+
+    $("[name=faulty_touchscreen]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      faulty_touchscreen = getValueFromInput("faulty_touchscreen");
+
+      nextTab = 'smartfeatures';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=smartfeatures]')).attr('prev-tab',we_activeTab);
+
+      });
+    $("[name=self_regulatedheat]").on("input", function () {
+    self_regulatedheat = getValueFromInput("self_regulatedheat");
 
       nextTab = 'client_name';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
@@ -1323,10 +1655,250 @@ var we_tabs_next_button = '[bloc=next-question]';
       $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
 
       });
-    $("[name=client_name]").on("input", function () {
-    client_name = getValueFromInput("client_name");
-      checkemail();
-});
+
+    $("[name=self_regulatedheat]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      self_regulatedheat = getValueFromInput("self_regulatedheat");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+    $("[name=temperature_setting]").on("input", function () {
+    temperature_setting = getValueFromInput("temperature_setting");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+
+    $("[name=temperature_setting]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      temperature_setting = getValueFromInput("temperature_setting");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+    $("[name=lighting]").on("input", function () {
+    lighting = getValueFromInput("lighting");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+
+    $("[name=lighting]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      lighting = getValueFromInput("lighting");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+    $("[name=other_smartfeatures]").on("input", function () {
+    other_smartfeatures = getValueFromInput("other_smartfeatures");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+
+    $("[name=other_smartfeatures]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      other_smartfeatures = getValueFromInput("other_smartfeatures");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+    $("[name=health_monitoring]").on("input", function () {
+    health_monitoring = getValueFromInput("health_monitoring");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+
+    $("[name=health_monitoring]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      health_monitoring = getValueFromInput("health_monitoring");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+    $("[name=anti_theft]").on("input", function () {
+    anti_theft = getValueFromInput("anti_theft");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+
+    $("[name=anti_theft]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      anti_theft = getValueFromInput("anti_theft");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+
 
     $("[name=client_name]").parent("label.w-radio").on("click", function () {
       clickedRadioButtonValue = $("input", this).val();

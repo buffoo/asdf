@@ -267,7 +267,7 @@ var we_tabs_next_button = '[bloc=next-question]';
 
       });
     if($('.w--tab-active').attr('data-w-tab')=='occupation') {
-        if ($("[name=accounting_finance]").val() || $("[name=arts_entertainment]").val() || $("[name=engineering_it]").val() || $("[name=healthcare]").val() || $("[name=management_consulting]").val() || $("[name=manufacturing_construction]").val() || $("[name=other_occupation]").val() || $("[name=publicservice_education]").val() || $("[name=realestate]").val() || $("[name=retail_hospitality]").val() || $("[name=student]").val() || $("[name=transportation]").val()) {
+        if ($("[name=input_name]").val() == ($("[name=accounting_finance]").val() || $("[name=arts_entertainment]").val() || $("[name=engineering_it]").val() || $("[name=healthcare]").val() || $("[name=management_consulting]").val() || $("[name=manufacturing_construction]").val() || $("[name=other_occupation]").val() || $("[name=publicservice_education]").val() || $("[name=realestate]").val() || $("[name=retail_hospitality]").val() || $("[name=student]").val() || $("[name=transportation]").val())) {
 
         nextTab = 'activities';
         we_activeTab = $(".w--tab-active").attr("data-w-tab");

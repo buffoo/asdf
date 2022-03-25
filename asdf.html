@@ -1915,17 +1915,19 @@ var we_tabs_next_button = '[bloc=next-question]';
       email = getValueFromInput("email");
         checkemail();
 });
-    $('[bloc=next-question]').on('click',function() {
-  if($('.w--tab-active').attr('data-w-tab')=='summary') {
+   $('[bloc=next-question]').on('click',function() {
+  if($('.w--tab-active').attr('data-w-tab')=='client_name') {
           $('[bloc=meeting-summary]').css({
       'display':'none',
     });
+
       }});
-    $('[bloc=prev-question]').on('click',function() {
-  if($('.w--tab-active').attr('data-w-tab')=='client_name') {
+$('[bloc=prev-question]').on('click',function() {
+  if($('.w--tab-active').attr('data-w-tab')=='smartfeatures') {
           $('[bloc=meeting-summary]').css({
       'display':'flex',
     });
+
       }});
 
 </script>

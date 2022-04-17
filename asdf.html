@@ -1,7 +1,9 @@
 <!-- Code generated in WeBlocks weblocks.com -->
 <script src="https://weblocks.io/library.js"></script>
 <script> 
-var gender, age, income, occupation, gloveuse, activities, hours, material, wrist, nolike, smartfeatures, client_name, summary, accounting_finance, arts_entertainment, engineering_it, healthcare, management_consulting, manufacturing_construction, other_occupation, publicservice_education, realestate, retail_hospitality, student, transportation, hiking_camping, rollerblading_skateboarding, biking_motorcycling, skating_skiing, running_walking, other_activities, sweaty_hands, awkward_fitting, not_waterproof, notwarm_enough, other_nolike, low_dexterity, poor_aesthetics, not_antibacterial, faulty_touchscreen, self_regulatedheat, temperature_setting, lighting, other_smartfeatures, health_monitoring, anti_theft, storage, pockets, bag, other_storage, charge_box, nocharge_box, groceries, shovelling_snow, commuting, engineering_it_mobile, management_consulting_mobile, retail_hospitality_mobile, arts_entertainment_mobile, transportation_mobile, publicservice_education_mobile, manufacturing_construction_mobile, realestate_mobile, student_mobile, healthcare_mobile, accounting_finance_mobile, other_occupation_mobile, hiking_camping_mobile, rollerblading_skateboarding_mobile, biking_motorcycling_mobile, skating_skiing_mobile, running_walking_mobile, groceries_mobile, shovelling_snow_mobile, commuting_mobile, other_activities_mobile, sweaty_hands_mobile, awkward_fitting_mobile, not_waterproof_mobile, notwarm_enough_mobile, low_dexterity_mobile, poor_aesthetics_mobile, not_antibacterial_mobile, faulty_touchscreen_mobile, other_nolike_mobile, self_regulatedheat_mobile, temperature_setting_mobile, lighting_mobile, health_monitoring_mobile, anti_theft_mobile, other_smartfeatures_mobile;
+var gender, age, income, occupation, gloveuse, activities, hours, material, wrist, nolike, smartfeatures, client_name, summary, accounting_finance, arts_entertainment, engineering_it, healthcare, management_consulting, manufacturing_construction, other_occupation, publicservice_education, realestate, retail_hospitality, student, transportation, hiking_camping, rollerblading_skateboarding, biking_motorcycling, skating_skiing, running_walking, other_activities, sweaty_hands, awkward_fitting, not_waterproof, notwarm_enough, other_nolike, low_dexterity, poor_aesthetics, not_antibacterial, faulty_touchscreen, self_regulatedheat, temperature_setting, lighting, other_smartfeatures, health_monitoring, anti_theft, storage, pockets, bag, other_storage, charge_box, nocharge_box, groceries, shovelling_snow, commuting, engineering_it_mobile, management_consulting_mobile, retail_hospitality_mobile, arts_entertainment_mobile, transportation_mobile, publicservice_education_mobile, manufacturing_construction_mobile, realestate_mobile, student_mobile, healthcare_mobile, accounting_finance_mobile, other_occupation_mobile, hiking_camping_mobile, rollerblading_skateboarding_mobile, biking_motorcycling_mobile, skating_skiing_mobile, running_walking_mobile, groceries_mobile, shovelling_snow_mobile, commuting_mobile, other_activities_mobile, sweaty_hands_mobile, awkward_fitting_mobile, not_waterproof_mobile, notwarm_enough_mobile, low_dexterity_mobile, poor_aesthetics_mobile, not_antibacterial_mobile, faulty_touchscreen_mobile, other_nolike_mobile, self_regulatedheat_mobile, temperature_setting_mobile, lighting_mobile, health_monitoring_mobile, anti_theft_mobile, other_smartfeatures_mobile, pockets_mobile, bag_mobile, charge_box_mobile, nocharge_box_mobile, other_storage_mobile;
+
+
 function checkemail() {
   if (bropls != null && email != null) {
 
@@ -3820,6 +3822,226 @@ $("[name=sweaty_hands_mobile]").on("input", function () {
     $("[name=nocharge_box]").parent("label.w-radio").on("click", function () {
       clickedRadioButtonValue = $("input", this).val();
       nocharge_box = getValueFromInput("nocharge_box");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+  $("[name=pockets_mobile]").on("input", function () {
+    pockets_mobile = getValueFromInput("pockets_mobile");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+
+    $("[name=pockets_mobile]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      pockets_mobile = getValueFromInput("pockets_mobile");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+    $("[name=bag_mobile]").on("input", function () {
+    bag_mobile = getValueFromInput("bag_mobile");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+
+    $("[name=bag_mobile]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      bag_mobile = getValueFromInput("bag_mobile");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+    $("[name=charge_box_mobile]").on("input", function () {
+    charge_box_mobile = getValueFromInput("charge_box_mobile");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+
+    $("[name=charge_box_mobile]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      charge_box_mobile = getValueFromInput("charge_box_mobile");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+    $("[name=nocharge_box_mobile]").on("input", function () {
+    nocharge_box_mobile = getValueFromInput("nocharge_box_mobile");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+
+    $("[name=nocharge_box_mobile]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      nocharge_box_mobile = getValueFromInput("nocharge_box_mobile");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+    $("[name=other_storage_mobile]").on("input", function () {
+    other_storage_mobile = getValueFromInput("other_storage_mobile");
+
+      nextTab = 'client_name';
+      we_activeTab = $(".w--tab-active").attr("data-w-tab");
+      we_indexOfActiveTab = tabList.indexOf(we_activeTab);
+      we_indexOfNextTab = we_indexOfActiveTab + 1;
+      we_indexOfPrevTab = we_indexOfActiveTab - 1;
+      we_prevTab = tabList[we_indexOfPrevTab];
+      we_amountOfTabs = tabList.length;
+
+      if (we_indexOfNextTab < we_amountOfTabs) {
+        tabList[we_indexOfNextTab] = nextTab;
+      } else {
+        tabList.push(nextTab);
+      }
+      $(we_tabs_next_button).addClass(we_tabs_active_class);
+      $(".w--tab-active").attr('next-tab',nextTab);
+      $($('[data-w-tab=client_name]')).attr('prev-tab',we_activeTab);
+
+      });
+
+    $("[name=other_storage_mobile]").parent("label.w-radio").on("click", function () {
+      clickedRadioButtonValue = $("input", this).val();
+      other_storage_mobile = getValueFromInput("other_storage_mobile");
 
       nextTab = 'client_name';
       we_activeTab = $(".w--tab-active").attr("data-w-tab");
